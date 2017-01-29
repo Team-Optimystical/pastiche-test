@@ -953,14 +953,41 @@ Prefab:
     - {fileID: 3300000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
   m_IsPrefabParent: 0
---- !u!1 &1522305561 stripped
+--- !u!1 &1522305561
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
   m_PrefabInternal: {fileID: 1522305560}
---- !u!4 &1522305562 stripped
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1522305562}
+  - component: {fileID: 1522305564}
+  - component: {fileID: 1522305563}
+  - component: {fileID: 1522305566}
+  - component: {fileID: 1522305567}
+  - component: {fileID: 1522305565}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1522305562
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
   m_PrefabInternal: {fileID: 1522305560}
+  m_GameObject: {fileID: 1522305561}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 770997636}
+  - {fileID: 1509158520}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1522305563
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1010,7 +1037,7 @@ MonoBehaviour:
     zMax: 8
   shot: {fileID: 118634, guid: bf047858bf6b220438c685d5af13bfc4, type: 2}
   shotSpawn: {fileID: 770997636}
-  fireRate: 0.1
+  fireRate: 0.25
 --- !u!82 &1522305566
 AudioSource:
   m_ObjectHideFlags: 0
