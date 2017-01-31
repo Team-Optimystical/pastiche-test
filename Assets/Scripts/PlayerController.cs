@@ -9,7 +9,6 @@ public class Boundary
 public class PlayerController : MonoBehaviour
 {
   public float speed;
-  public float tilt;
   public Boundary boundary;
 
   public GameObject shot;
@@ -42,9 +41,6 @@ public class PlayerController : MonoBehaviour
     float moveVertical = Input.GetAxis("Vertical");
     Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
     rb.velocity = movement * speed;
-
-    // Bank ship.
-    rb.rotation = Quaternion.Euler(0, 0, rb.velocity.x * -tilt);
 
     // Prevent ship from going out of bounds.
     rb.position = new Vector3(
