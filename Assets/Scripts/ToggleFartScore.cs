@@ -19,6 +19,8 @@ public class ToggleFartScore : MonoBehaviour {
 	private float fartShowTimeStart;
 	private bool fartShowing;
 
+	private int fartLength = 2;
+
 	// Use this for initialization
 	void Start () {
 		waiting = false;
@@ -44,12 +46,12 @@ public class ToggleFartScore : MonoBehaviour {
 				playFartSound ();
 
 				fartShowTimeStart = Time.time;
-				startTime = endTime + 1; // account for 1 second of fart showing
+				startTime = endTime + fartLength;
 				waiting = false;
 			}
 
 			if (fartShowing) {
-				if (Time.time >= fartShowTimeStart + 1) {
+				if (Time.time >= fartShowTimeStart + fartLength) {
 					hideFart ();
 					fartShowing = false;
 				}
