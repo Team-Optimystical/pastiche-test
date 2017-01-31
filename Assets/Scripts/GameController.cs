@@ -74,7 +74,7 @@ public class GameController : MonoBehaviour
   private void UpdateScore(int newScore)
   {
     score = newScore;
-    scoreText.text = "Score: " + score;
+		scoreText.text = score.ToString();
   }
   public void ToggleRestart(bool show)
   {
