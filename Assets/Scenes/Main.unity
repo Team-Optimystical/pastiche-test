@@ -1019,8 +1019,8 @@ MonoBehaviour:
   fartScore: {fileID: 1881580840}
   fartText: {fileID: 388791928}
   background: {fileID: 1875703989}
-  fart1: {fileID: 8300000, guid: 5d12210ea99c94d67b028cc3d53cd517, type: 3}
-  fart2: {fileID: 8300000, guid: cc22747328e2142aa9d3cb773c089f9c, type: 3}
+  fart1: {fileID: 8300000, guid: a4bc2c5dca0f846deabd8ab0d5e0749b, type: 3}
+  fart2: {fileID: 8300000, guid: 2b8d76cda664d47d19df667c203b4b05, type: 3}
 --- !u!1 &1604507827
 GameObject:
   m_ObjectHideFlags: 0
