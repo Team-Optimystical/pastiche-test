@@ -26,8 +26,6 @@ public class ToggleFartScore : MonoBehaviour {
 		waiting = false;
 		startTime = Time.time;
 		hideFart ();
-		fartShowing = false;
-
 	}
 	
 	// Update is called once per frame
@@ -41,10 +39,7 @@ public class ToggleFartScore : MonoBehaviour {
 			if (Time.time >= endTime) {
 				// show the score
 				showFart ();
-				fartShowing = true;
-
 				playFartSound ();
-
 				fartShowTimeStart = Time.time;
 				startTime = endTime + fartLength;
 				waiting = false;
@@ -53,24 +48,23 @@ public class ToggleFartScore : MonoBehaviour {
 			if (fartShowing) {
 				if (Time.time >= fartShowTimeStart + fartLength) {
 					hideFart ();
-					fartShowing = false;
 				}
 			}
-		
 		}
-		
 	}
 
 	void hideFart() {
 		fartSprite.GetComponent<SpriteRenderer> ().enabled = false;
 		fartScore.GetComponent<Text> ().enabled = false;
 		fartText.GetComponent<Text> ().enabled = false;
+		fartShowing = false;
 	}
 		
 	void showFart() {
 		fartSprite.GetComponent<SpriteRenderer> ().enabled = true;
 		fartScore.GetComponent<Text> ().enabled = true;
 		fartText.GetComponent<Text> ().enabled = true;
+		fartShowing = true;
 	}
 
 	void playFartSound() {
