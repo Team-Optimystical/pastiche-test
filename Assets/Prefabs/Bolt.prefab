@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5407856}
   - component: {fileID: 13641204}
   - component: {fileID: 11444976}
+  - component: {fileID: 114546259428188792}
   m_Layer: 0
   m_Name: Bolt
   m_TagString: Untagged
@@ -112,6 +113,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 118634}
   m_IsPrefabParent: 1
+--- !u!114 &114546259428188792
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca36a65fa54e0449b186a790dc487ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212976964713355994
 SpriteRenderer:
   m_ObjectHideFlags: 1

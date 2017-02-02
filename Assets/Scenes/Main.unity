@@ -530,10 +530,10 @@ MonoBehaviour:
   hazards:
   - {fileID: 199654, guid: 51397500684983e409015c48f1cf6110, type: 2}
   spawnValues: {x: 6, y: 0, z: 16}
-  hazardCount: 10
+  hazardCount: 1
   spawnWait: 0.5
   startWait: 1
-  waveWait: 4
+  waveWait: 0.2
   scoreText: {fileID: 1881580842}
   restartText: {fileID: 815477636}
   gameOverText: {fileID: 127628166}
@@ -617,7 +617,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -915,7 +915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7169d70b321b3aa4b94b71cb6a460904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 12
   boundary:
     xMin: -8
     xMax: 8
@@ -992,7 +992,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1271,7 +1271,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
