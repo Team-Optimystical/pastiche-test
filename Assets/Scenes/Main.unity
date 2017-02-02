@@ -530,10 +530,10 @@ MonoBehaviour:
   hazards:
   - {fileID: 199654, guid: 51397500684983e409015c48f1cf6110, type: 2}
   spawnValues: {x: 6, y: 0, z: 16}
-  hazardCount: 10
+  hazardCount: 1
   spawnWait: 0.5
   startWait: 1
-  waveWait: 4
+  waveWait: 0.2
   scoreText: {fileID: 1881580842}
   restartText: {fileID: 815477636}
   gameOverText: {fileID: 127628166}
