@@ -34,6 +34,9 @@ public class DestroyByContact : MonoBehaviour
     {
       Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
       gameController.GameOver();
+	  other.GetComponent<ToggleFartScore> ().showFart ();
+	  other.GetComponent<ToggleFartScore> ().playFartSound();
+
     }
 
     gameController.AddScore(scoreValue);

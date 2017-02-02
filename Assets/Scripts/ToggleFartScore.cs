@@ -53,21 +53,21 @@ public class ToggleFartScore : MonoBehaviour {
 		}
 	}
 
-	void hideFart() {
+	public void hideFart() {
 		fartSprite.GetComponent<SpriteRenderer> ().enabled = false;
 		fartScore.GetComponent<Text> ().enabled = false;
 		fartText.GetComponent<Text> ().enabled = false;
 		fartShowing = false;
 	}
 		
-	void showFart() {
+	public void showFart() {
 		fartSprite.GetComponent<SpriteRenderer> ().enabled = true;
 		fartScore.GetComponent<Text> ().enabled = true;
 		fartText.GetComponent<Text> ().enabled = true;
 		fartShowing = true;
 	}
 
-	void playFartSound() {
+	public void playFartSound() {
 		int whichToPlay = Random.Range (1, 3);
 		AudioSource source = background.GetComponent<AudioSource> ();
 		if (whichToPlay == 1) {
