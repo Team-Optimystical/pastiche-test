@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
 	// negative if moving left, positive if moving right.
 		if (moveHorizontal > 0) {
 			sprite.GetComponent<SpriteRenderer> ().flipX = true;
-		} else {
+		} else if (moveHorizontal < 0) {
 			sprite.GetComponent<SpriteRenderer> ().flipX = false;
 		}
     float moveVertical = Input.GetAxis("Vertical");
