@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
   public GameObject shot;
   public Transform shotSpawn;
   public float fireRate;
+  public GameObject sprite;
 
   private Rigidbody rb;
   private AudioSource asrc;
@@ -38,8 +39,14 @@ public class PlayerController : MonoBehaviour
   void FixedUpdate()
   {
     float moveHorizontal = Input.GetAxis("Horizontal");
+	// negative if moving left, positive if moving right.
+		if (moveHorizontal > 0) {
+			sprite.GetComponent<SpriteRenderer> ().flipX = true;
+		} else {
+			sprite.GetComponent<SpriteRenderer> ().flipX = false;
+		}
     float moveVertical = Input.GetAxis("Vertical");
-    Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
+    Vector3 movement = new Vector3(moveHorizontal, 5, moveVertical);
     rb.velocity = movement * speed;
 
     // Prevent ship from going out of bounds.
